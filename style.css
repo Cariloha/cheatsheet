@@ -47,7 +47,35 @@ body {
 }
 
 .bnw-filter-color {
-  filter: grayscale(0%);
+  animation: toColor 2s forwards ease-in;
+}
+
+.bnw-filter-nocolor {
+  animation: noColor 2s ease-out;
+}
+
+
+@keyframes toColor {
+  0% {
+    filter: grayscale(100%);
+  }
+
+  50% {
+    filter: grayscale(50%);
+  }
+
+  100% {
+    filter: grayscale(0%);
+  }
+  
+}
+
+@keyframes noColor {
+
+  to {
+    filter: grayscale(100%);
+  }
+  
 }
 
 .hero__section {
