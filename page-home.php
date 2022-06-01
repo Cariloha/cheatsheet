@@ -26,7 +26,7 @@ if (have_posts()) {
   </div>
 
   <div class="wrapper first">
-    <img class="bnw-filter" src="http://testing.local/wp-content/uploads/2022/05/istockphoto-1356638196-170667a.jpg" alt="" sizes="
+    <img class="" src="http://testing.local/wp-content/uploads/2022/05/istockphoto-1356638196-170667a.jpg" alt="" sizes="
     (min-width: 2420px) 2000px, 
     (min-width: 720px) calc(94.76vw - 274px), 
     (min-width: 520px) calc(100vw - 96px), 

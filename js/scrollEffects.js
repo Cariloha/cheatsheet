@@ -13,19 +13,19 @@ window.onload = () => {
 
     };
 
-    window.addEventListener('scroll', () => {
-        const scrollable = elementPosition;
-        const scrolled = window.scrollY;
+    // window.addEventListener('scroll', () => {
+    //     const scrollable = elementPosition;
+    //     const scrolled = window.scrollY;
 
-        console.log(scrollable);
-        console.log("----");
-        console.log(scrolled);
+    //     console.log(scrollable);
+    //     console.log("----");
+    //     console.log(scrolled);
 
 
-            if (Math.ceil(scrolled) === scrollable) {
-                element.classList.remove('bnw-filter');
-        } //math ceil rounds up the number. 
-    });
+    //         if (Math.ceil(scrolled) === scrollable) {
+    //             element.classList.remove('bnw-filter');
+    //     } //math ceil rounds up the number. 
+    // });
 
     const observer = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {

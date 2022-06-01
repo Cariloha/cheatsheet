@@ -46,14 +46,13 @@ body {
   filter: grayscale(100%);
 }
 
+.bnw-filter-nocolor {
+  animation: noColor 2s forwards ease-out;
+}
+
 .bnw-filter-color {
   animation: toColor 2s forwards ease-in;
 }
-
-.bnw-filter-nocolor {
-  animation: noColor 2s ease-out;
-}
-
 
 @keyframes toColor {
   0% {
@@ -72,8 +71,16 @@ body {
 
 @keyframes noColor {
 
-  to {
+  100% {
     filter: grayscale(100%);
+  }
+
+  50% {
+    filter: grayscale(50%);
+  }
+
+  10% {
+    filter: grayscale(10%);
   }
   
 }
