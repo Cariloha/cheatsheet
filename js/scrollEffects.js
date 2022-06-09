@@ -13,7 +13,7 @@ window.onload = () => {
             toggleActions: "play pause reverse reset",
             start: "top center",
             scrub: 1,
-            markers: true,
+            // markers: true,
         }
     });
 
