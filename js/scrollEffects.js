@@ -10,7 +10,7 @@ window.onload = () => {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: ".bnw-filter",
-            toggleActions: "play pause reverse reset",
+            // toggleActions: "play pause reverse reset",
             start: "top center",
             scrub: 1,
             // markers: true,

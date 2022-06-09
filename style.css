@@ -55,7 +55,7 @@ body {
 }
 
 .bnw-filter-color {
-  animation: toColor 2s forwards ease-in;
+  animation: toColor 2s ease-in;
 }
 
 @keyframes toColor {
