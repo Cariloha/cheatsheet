@@ -42,6 +42,10 @@ body {
 }
 
 
+.wrapper {
+  height: 80vh;
+}
+
 .bnw-filter { 
   filter: grayscale(100%);
 }

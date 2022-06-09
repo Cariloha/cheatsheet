@@ -26,7 +26,7 @@ if (have_posts()) {
   </div>
 
   <div class="wrapper first">
-    <img class="" src="https://wordpress-576448-2675264.cloudwaysapps.com/wp-content/uploads/2022/06/istockphoto-1356638196-170667a.jpg" alt="" sizes="
+    <img class="bnw-filter" src="https://wordpress-576448-2675264.cloudwaysapps.com/wp-content/uploads/2022/06/istockphoto-1356638196-170667a.jpg" alt="" sizes="
     (min-width: 2420px) 2000px, 
     (min-width: 720px) calc(94.76vw - 274px), 
     (min-width: 520px) calc(100vw - 96px), 
@@ -34,7 +34,9 @@ if (have_posts()) {
     " />
   </div>
 
-  <div class="wrapper second">
+
+
+  <!-- <div class="wrapper second">
     <img class="bnw-filter" src="https://wordpress-576448-2675264.cloudwaysapps.com/wp-content/uploads/2022/06/istockphoto-1356638196-170667a.jpg" alt="" sizes="
     (min-width: 2420px) 2000px, 
     (min-width: 720px) calc(94.76vw - 274px), 
@@ -59,7 +61,7 @@ if (have_posts()) {
     (min-width: 520px) calc(100vw - 96px), 
     calc(100vw - 32px)
     " />
-  </div>
+  </div> -->
 
 
 
