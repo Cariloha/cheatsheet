@@ -10,6 +10,7 @@ dist/
 #vendor 
 
 /vendor
+/assets
 
 
 # Log files

@@ -26,12 +26,11 @@ if (have_posts()) {
   </div>
 
   <div class="wrapper first">
-    <img class="bnw-filter" src="https://wordpress-576448-2675264.cloudwaysapps.com/wp-content/uploads/2022/06/istockphoto-1356638196-170667a.jpg" alt="" sizes="
-    (min-width: 2420px) 2000px, 
-    (min-width: 720px) calc(94.76vw - 274px), 
-    (min-width: 520px) calc(100vw - 96px), 
-    calc(100vw - 32px)
-    " />
+    <div class="player-wrapper">
+      <video class="scroll-video">
+        <source poster="" src="<?php echo get_template_directory_uri() . '/assets/video/test.mp4' ?>">
+      </video>
+    </div>
   </div>
 
 
