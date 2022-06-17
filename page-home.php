@@ -27,7 +27,7 @@ if (have_posts()) {
 
   <div class="wrapper first">
     <div class="player-wrapper">
-      <video class="scroll-video">
+      <video muted playsinline loop class="scroll-video">
         <source poster="" src="<?php echo get_template_directory_uri() . '/assets/video/test.mp4' ?>">
       </video>
     </div>

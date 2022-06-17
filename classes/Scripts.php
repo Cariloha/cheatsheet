@@ -25,6 +25,9 @@ if (!class_exists('scistoriesScripts')) {
 		const GSAP = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js";
 		const TWEENMAX = "https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js";
 		const SCROLL_TRIGGER = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js";
+		const SCROLL_MAGIC = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js";
+		const SCROLL_MAGIC_DEBUG = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js";
+		const ANIMATION_GSAP = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js";
 
 
 
@@ -62,6 +65,9 @@ if (!class_exists('scistoriesScripts')) {
 			wp_enqueue_script('tweenmax', self::TWEENMAX, array(), '', true);
 			wp_enqueue_script('gsap', self::GSAP, array(), '', true);
 			wp_enqueue_script('scroll-trigger', self::SCROLL_TRIGGER, array(), '', true);
+			wp_enqueue_script('scroll-magic', self::SCROLL_MAGIC, array(), '', true);
+			wp_enqueue_script('animation-gsap', self::ANIMATION_GSAP, array(), '', true);
+			wp_enqueue_script('scroll-magic-debug', self::SCROLL_MAGIC_DEBUG, array(), '', true);
 
 			wp_enqueue_script('scroll-effect', scistories_URL . '/js/scrollEffects.js', array('jquery'), filemtime(scistories_DIR) . '/js/scrollEffects.js', true);
 			wp_enqueue_script('scistories', scistories_URL . '/js/scistories.js', array('jquery'), filemtime(scistories_DIR) . '/js/scistories.js', true);
