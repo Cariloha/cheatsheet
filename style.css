@@ -126,14 +126,14 @@ body {
 
 .content {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 10% 5% 5%;
-  box-sizing: border-box;
-  backface-visibility: hidden;
-  background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#FFFFFF), to(#CCCCCC));
-  background: linear-gradient(to bottom right, #fff, #ccc);
-}
+    width: 100%;
+    height: 100%;
+    padding: 10% 5% 5%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#FFFFFF), to(#CCCCCC));
+    background: linear-gradient(to bottom right, #fff, #ccc);
+  }
 
 .page.active {
   transform: rotateY(0deg);
@@ -148,6 +148,10 @@ body {
   animation: fade 1s 0.5s forwards;
 }
 
+.page.flipped:last-of-type {
+  z-index: 1;
+}
+
 @keyframes fade {
   0% {
     opacity: 1;
@@ -158,7 +162,7 @@ body {
   }
 }
 
-.active~.page {
+.active ~ .page {
   opacity: 0;
 }
 

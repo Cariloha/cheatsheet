@@ -28,8 +28,8 @@ if (!class_exists('scistoriesScripts')) {
 		const SCROLL_MAGIC = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js";
 		const SCROLL_MAGIC_DEBUG = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js";
 		const ANIMATION_GSAP = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js";
-		const TURNJS = "https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js";
-
+		// const TURNJS = "https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js";
+		const HAMMERJS = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js";
 
 		/**
 		 * Add hooks and filters
@@ -68,7 +68,8 @@ if (!class_exists('scistoriesScripts')) {
 			wp_enqueue_script('scroll-magic', self::SCROLL_MAGIC, array(), '', true);
 			wp_enqueue_script('animation-gsap', self::ANIMATION_GSAP, array(), '', true);
 			wp_enqueue_script('scroll-magic-debug', self::SCROLL_MAGIC_DEBUG, array(), '', true);
-			wp_enqueue_script('turn-js', self::TURNJS, array(), '', true);
+			wp_enqueue_script('hammer-js', self::HAMMERJS, array(), '', true);
+			// wp_enqueue_script('turn-js', self::TURNJS, array(), '', true);
 
 			wp_enqueue_script('scroll-effect', scistories_URL . '/js/scrollEffects.js', array('jquery'), filemtime(scistories_DIR) . '/js/scrollEffects.js', true);
 			wp_enqueue_script('turn-effect', scistories_URL . '/js/page.js', array('jquery'), filemtime(scistories_DIR) . '/js/page.js', true);

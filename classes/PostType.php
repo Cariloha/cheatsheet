@@ -89,6 +89,22 @@ if (!class_exists('scistories_Custom_Posttype')) {
 					'supports'     => ['title', 'editor', 'thumbnail'],
 				]
 			);
+
+			/* To create a careers Post Type */
+			register_post_type(
+				'notebook',
+				[
+					'labels'       => [
+						'name'          => __('Notebook', 'scistories'),
+						'singular_name' => __('Notebook', 'scistories'),
+					],
+					'public'       => true,
+					'show_in_rest' => true,
+					'show_ui'      => true,
+					'menu_icon'    => 'dashicons-welcome-write-blog',
+					'supports'     => ['title', 'editor', 'thumbnail'],
+				]
+			);
 		}
 
 
