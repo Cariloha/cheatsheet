@@ -19,21 +19,81 @@ if (have_posts()) {
     the_post();
 ?>
 
-    <div class="wrapper">
-        <div class="aspect">
-            <div class="aspect-inner">
-                <div class="flipbook" id="flipbook">
-                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/01.jpg" draggable="false" alt="" /></div>
-                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg" draggable="false" alt="" /></div>
-                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg" draggable="false" alt="" /></div>
-                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg" draggable="false" alt="" /></div>
-                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg" draggable="false" alt="" /></div>
-                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg" draggable="false" alt="" /></div>
+    <div class="scene">
+        <article class="book">
+            <section class="page active">
+                <div class="content">
+                    <h1>Quick iPad Flipping Book Demo</h1>
+                    <p>
+                        Sehen Sie, Webstandards sind das Regelwerk, auf dem Webseiten aufbauen. So gibt es Regeln für HTML, CSS, JavaScript oder auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler gehört haben. Diese Standards sorgen dafür, dass alle Beteiligten
+                        aus einer Webseite den größten Nutzen ziehen.
+                    </p>
+                    <p>
+                        Im Gegensatz zu früheren Webseiten müssen wir zum Beispiel nicht mehr zwei verschiedene Webseiten für den Internet Explorer und einen anderen Browser programmieren. Es reicht eine Seite, die - richtig angelegt - sowohl auf verschiedenen Browsern im Netz
+                        funktioniert, aber ebenso gut für den Ausdruck oder
+                    </p>
+                    <div class="qr">
+                        <img src="http://www.qrcode-generator.de/getCode/?cht=qr&chl=http%3A%2F%2Fcodepen.io%2Ftimohausmann%2Ffull%2FxdKkA&chs=180x180&choe=UTF-8&chld=L|0" />qr code for codepen full page
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </section>
+            <section class="page">
+                <div class="content">
+                    <h1>– 2 –</h1>
+                    <p>
+                        Sehen Sie, Webstandards sind das Regelwerk, auf dem Webseiten aufbauen. So gibt es Regeln für HTML, CSS, JavaScript oder auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler gehört haben. Diese Standards sorgen dafür, dass alle Beteiligten
+                        aus einer Webseite den größten Nutzen ziehen.
+                    </p>
+                    <p>
+                        Im Gegensatz zu früheren Webseiten müssen wir zum Beispiel nicht mehr zwei verschiedene Webseiten für den Internet Explorer und einen anderen Browser programmieren. Es reicht eine Seite, die - richtig angelegt - sowohl auf verschiedenen Browsern im Netz
+                        funktioniert, aber ebenso gut für den Ausdruck oder
+                    </p>
+                </div>
+            </section>
+            <section class="page">
+                <div class="content">
+                    <h1>– 3 –</h1>
+                    <p>
+                        Sehen Sie, Webstandards sind das Regelwerk, auf dem Webseiten aufbauen. So gibt es Regeln für HTML, CSS, JavaScript oder auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler gehört haben. Diese Standards sorgen dafür, dass alle Beteiligten
+                        aus einer Webseite den größten Nutzen ziehen.
+                    </p>
+                    <p>
+                        Im Gegensatz zu früheren Webseiten müssen wir zum Beispiel nicht mehr zwei verschiedene Webseiten für den Internet Explorer und einen anderen Browser programmieren. Es reicht eine Seite, die - richtig angelegt - sowohl auf verschiedenen Browsern im Netz
+                        funktioniert, aber ebenso gut für den Ausdruck oder
+                    </p>
+                </div>
+            </section>
+            <section class="page">
+                <div class="content">
+                    <h1>– 4 –</h1>
+                    <p>
+                        Sehen Sie, Webstandards sind das Regelwerk, auf dem Webseiten aufbauen. So gibt es Regeln für HTML, CSS, JavaScript oder auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler gehört haben. Diese Standards sorgen dafür, dass alle Beteiligten
+                        aus einer Webseite den größten Nutzen ziehen.
+                    </p>
+                    <p>
+                        Im Gegensatz zu früheren Webseiten müssen wir zum Beispiel nicht mehr zwei verschiedene Webseiten für den Internet Explorer und einen anderen Browser programmieren. Es reicht eine Seite, die - richtig angelegt - sowohl auf verschiedenen Browsern im Netz
+                        funktioniert, aber ebenso gut für den Ausdruck oder
+                    </p>
+                </div>
+            </section>
+            <section class="page">
+                <div class="content">
+                    <h1>– 5 –</h1>
+                    <p>
+                        Sehen Sie, Webstandards sind das Regelwerk, auf dem Webseiten aufbauen. So gibt es Regeln für HTML, CSS, JavaScript oder auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler gehört haben. Diese Standards sorgen dafür, dass alle Beteiligten
+                        aus einer Webseite den größten Nutzen ziehen.
+                    </p>
+                    <p>
+                        Im Gegensatz zu früheren Webseiten müssen wir zum Beispiel nicht mehr zwei verschiedene Webseiten für den Internet Explorer und einen anderen Browser programmieren. Es reicht eine Seite, die - richtig angelegt - sowohl auf verschiedenen Browsern im Netz
+                        funktioniert, aber ebenso gut für den Ausdruck oder
+                    </p>
+                </div>
+            </section>
 
+        </article>
+        <button id='next'>Next</button>
+        <button id='prev'>Previous</button>
+    </div>
 
 <?php }
 get_footer(); ?>

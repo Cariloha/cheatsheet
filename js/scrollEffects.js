@@ -13,7 +13,7 @@ window.onload = () => {
       }
     )
       .addTo(controller)
-      // .addIndicators()
+      .addIndicators()
       .on("enter", function (e) {
         element.play();
       })
