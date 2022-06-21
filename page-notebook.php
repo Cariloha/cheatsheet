@@ -25,7 +25,6 @@ if (have_posts()) {
             if ($notebook->have_posts()) {
                 while ($notebook->have_posts()) {
                     $notebook->the_post();
-
             ?>
                     <section class="section__page page">
                         <div class="content">

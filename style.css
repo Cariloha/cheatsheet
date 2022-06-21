@@ -203,3 +203,11 @@ p {
   left: 0px;
   bottom: 0px;
 }
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline;
+}

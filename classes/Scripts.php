@@ -71,7 +71,7 @@ if (!class_exists('scistoriesScripts')) {
 			wp_enqueue_script('hammer-js', self::HAMMERJS, array(), '', true);
 			// wp_enqueue_script('turn-js', self::TURNJS, array(), '', true);
 
-			wp_enqueue_script('scroll-effect', scistories_URL . '/js/scrollEffects.js', array('jquery'), filemtime(scistories_DIR) . '/js/scrollEffects.js', true);
+			// wp_enqueue_script('scroll-effect', scistories_URL . '/js/scrollEffects.js', array('jquery'), filemtime(scistories_DIR) . '/js/scrollEffects.js', true);
 			wp_enqueue_script('turn-effect', scistories_URL . '/js/page.js', array('jquery'), filemtime(scistories_DIR) . '/js/page.js', true);
 
 			wp_enqueue_script('scistories', scistories_URL . '/js/scistories.js', array('jquery'), filemtime(scistories_DIR) . '/js/scistories.js', true);
