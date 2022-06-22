@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
   pages[0].classList.add('active');
   const prevBtn = document.getElementById("prev");
   const nextBtn = document.getElementById("next");
+  const footer = document.getElementById("footer");
+
+  footer.classList.add("hide");
 
   let currentPage = 0;
     checkButtons();

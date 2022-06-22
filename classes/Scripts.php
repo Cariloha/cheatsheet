@@ -21,7 +21,7 @@ if (!class_exists('scistoriesScripts')) {
 	{
 		const BOOTSTRAP_CDN_VERSION    = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css";
 		const BOOTSTRAP_WITH_POPPER = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js";
-		const FONTAWESOME_CDN_VERSION = "https://use.fontawesome.com/releases/v5.2.0/css/all.css";
+		const FONTAWESOME_CDN_VERSION = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css";
 		const GSAP = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js";
 		const TWEENMAX = "https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js";
 		const SCROLL_TRIGGER = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js";
@@ -72,7 +72,6 @@ if (!class_exists('scistoriesScripts')) {
 			// wp_enqueue_script('turn-js', self::TURNJS, array(), '', true);
 
 			// wp_enqueue_script('scroll-effect', scistories_URL . '/js/scrollEffects.js', array('jquery'), filemtime(scistories_DIR) . '/js/scrollEffects.js', true);
-			wp_enqueue_script('turn-effect', scistories_URL . '/js/page.js', array('jquery'), filemtime(scistories_DIR) . '/js/page.js', true);
 
 			wp_enqueue_script('scistories', scistories_URL . '/js/scistories.js', array('jquery'), filemtime(scistories_DIR) . '/js/scistories.js', true);
 

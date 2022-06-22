@@ -55,22 +55,94 @@ if (!class_exists('scistories_Customize_Section')) {
 
 			/* Add settings */
 			$wp_customize->add_setting(
-				'copyright_text',
+				'address',
 				array(
 					'default'    => '',
 					'capability' => 'edit_theme_options',
 				)
 			);
 
-			/* Add control */
-			$wp_customize->add_control(
-				'copyright_text',
+			$wp_customize->add_setting(
+				'url_map',
 				array(
-					'label'    => __('Copyright Text', 'scistories'),
-					'section'  => 'footer_content',
-					'settings' => 'copyrignt_text',
+					'default'    => '',
+					'capability' => 'edit_theme_options',
 				)
 			);
+
+			$wp_customize->add_setting(
+				'phone',
+				array(
+					'default'    => '',
+					'capability' => 'edit_theme_options',
+				)
+			);
+
+			$wp_customize->add_setting(
+				'email',
+				array(
+					'default'    => '',
+					'capability' => 'edit_theme_options',
+				)
+			);
+
+			$wp_customize->add_setting(
+				'image',
+				array(
+					'default'    => '',
+					'capability' => 'edit_theme_options',
+				)
+			);
+
+			/* Add controls */
+			$wp_customize->add_control(
+				'address',
+				array(
+					'label'    => __('Address', 'scistories'),
+					'section'  => 'footer_content',
+					'settings' => 'address',
+				)
+			);
+
+			$wp_customize->add_control(
+				'url_map',
+				array(
+					'label'    => __('URL for Google Maps', 'scistories'),
+					'section'  => 'footer_content',
+					'settings' => 'url_map',
+				)
+			);
+
+			$wp_customize->add_control(
+				'phone',
+				array(
+					'label'    => __('Phone', 'scistories'),
+					'section'  => 'footer_content',
+					'settings' => 'phone',
+				)
+			);
+
+			$wp_customize->add_control(
+				'email',
+				array(
+					'label'    => __('E-mail', 'scistories'),
+					'section'  => 'footer_content',
+					'settings' => 'email',
+				)
+			);
+
+			$wp_customize->add_control(
+				new WP_Customize_Image_Control(
+					$wp_customize,
+					'image',
+					array(
+						'label'      => __('Upload image', 'scistories'),
+						'section'    => 'footer_content',
+						'settings'   => 'image',
+					)
+				)
+			);
+
 
 			/* For Social media content */
 			$wp_customize->add_section(

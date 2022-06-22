@@ -36,7 +36,15 @@ require_once scistories_DIR . '/classes/Publications.php';
 
 /*Metaboxes*/
 require_once scistories_DIR . '/metaboxes/GlobalMetaboxes.php';
-// require_once scistories_DIR . '/metaboxes/team-metabox.php';
+require_once scistories_DIR . '/metaboxes/institute-metabox.php';
 
 /*Custom posts metaboxes*/
 require_once scistories_DIR . '/metaboxes/custom_posts/research-cpt-metabox.php';
+
+function my_scripts()
+{
+    if (is_page('notebook')) {
+        wp_enqueue_script('turn-effect', scistories_URL . '/js/page.js', array('jquery'), filemtime(scistories_DIR) . '/js/page.js', true);
+    };
+}
+add_action('wp_enqueue_scripts', 'my_scripts');

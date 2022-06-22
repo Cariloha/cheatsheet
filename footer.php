@@ -14,18 +14,50 @@
     */
 
    ?>
-
- <footer>
+ <footer class="main__footer" id="footer">
     <div class="container">
-       <div class="row ">
-          <div class="col-12 d-flex justify-content-center footer-txt">
-             <p><?php echo get_theme_mod('copyright_text'); ?></p>
+       <div class="row footer-content">
+          <div class="col-4">
+             <div class="row address">
+                <div class="col-2">
+                   <i class="fa-solid fa-building"></i>
+                </div>
+                <div class="col-10">
+                   <p><?php echo get_theme_mod('address'); ?></p>
+                </div>
+             </div>
+             <div class="row location">
+                <div class="col-2">
+                   <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="col-10">
+                   <a href="<?php echo get_theme_mod('url_map'); ?>" target="_blank">View on Google Maps</a>
+                </div>
+             </div>
+             <div class="row phone">
+                <div class="col-2">
+                   <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="col-10">
+                   <p>Phone: <?php echo get_theme_mod('phone'); ?></p>
+                </div>
+             </div>
+             <div class="row email">
+                <div class="col-2">
+                   <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="col-10">
+                   <a href="mailto:<?php echo get_theme_mod('email') ?>">Email: <?php echo get_theme_mod('email') ?></a>
+                </div>
+             </div>
+          </div>
+
+          <div class="col-8 footer-img">
+             <img class="img-fluid" src="<?php echo get_theme_mod('image'); ?>" alt="">
           </div>
        </div>
     </div>
-
  </footer>
-
  <?php wp_footer(); ?>
  </body>
 

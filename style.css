@@ -1,5 +1,5 @@
 /*
-Theme Name: 
+Theme Name: Altius Notebook
 Text Domain: 
 Version: 1.0.0
 Author: SciStories
@@ -8,21 +8,39 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto&display=swap");
+@font-face {
+  font-family: "Graphik";
+  src: url("./fonts/GraphikRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-weight: bold;
+  src: url("./fonts/GraphikBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-weight: 100;
+  src: url("./fonts/GraphikThin.otf") format("opentype");
+}
+
 :root {
   /* Fonts */
-  --mainFont: "Oswald", sans-serif;
-  --textFont: "Roboto", sans-serif;
-
+  --mainFont: "Graphik", sans-serif;
+    --textFont: "Graphik", sans-serif;
   /*Colors*/
-  --primaryColor: #051f34;
-  --gold: #e2ae79;
-  --textGray: #5d5d5d;
-  --secondTitle: #c1592b;
-  --bgGray: #f3f3f4;
-  --borderGray: #d9d9d9;
-  --black: #232323;
-  --white: #ffffff;
+  --primaryColor: #000000;
+    --gold: #e2ae79;
+    --bgGray: #f3f3f4;
+    --bluePop: #81afed;
+    --black: #000000;
+    --white: #ffffff;
+    --lightGray: #fafafa;
+    --burgundy: #811240;
+    --seaFoam: #8dc2bf;
+    --plum: #5d3b51;
+    --mauve: #d58da4;
 }
 
 html {
@@ -41,6 +59,98 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4.6rem;
+  /* text-shadow: 1px 1px 2px var(--black); */
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+a {
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.8rem;
+  color: var(--black);
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.pb-5 {
+  padding-bottom: 5rem;
+}
+
+.pt-6 {
+  padding-top: 6rem;
+}
+
+.pb-6 {
+  padding-bottom: 6rem;
+}
+
+.pt-8 {
+  padding-top: 8rem;
+}
+
+.pb-8 {
+  padding-bottom: 8rem;
+}
+
+.pt-10 {
+  padding-top: 10rem;
+}
+
+.pb-10 {
+  padding-bottom: 10rem;
+}
+
+.button {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: 0;
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--black);
+  outline: 0;
+}
+
+.first {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover {
+  box-shadow: 0 0 40px 40px var(--white) inset;
 }
 
 
@@ -187,11 +297,6 @@ body {
   opacity: 0;
 }
 
-p {
-  margin: 0 0 0.1em;
-  text-indent: 1em;
-}
-
 .qr {
   margin: 50px auto;
   max-width: 50%;
@@ -246,4 +351,178 @@ p {
       padding: 1rem;
       font-size: 1.8rem;
     }
+}
+
+/*institute*/
+
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero--institute {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-rows: 200px 100px auto;
+  /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.571848807882528) 27%, rgba(0, 0, 0, 1) 81%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100%); */
+}
+
+.hero__definition--institute {
+  grid-column-start: 2;
+  grid-row: 2/3;
+}
+
+.hero__definition--institute p,
+.hero__title,
+.hero__text {
+  color: var(--white);
+}
+
+.hero__title>strong {
+  color: var(--gold);
+}
+
+.hero__description {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  align-self: flex-end;
+  padding-bottom: 30rem;
+}
+
+.quote-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote__img {
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.quote-content {
+  font-size: 1.6rem;
+  color: var(--black);
+}
+
+.quote-content span {
+  font-size: 1.6rem;
+  color: var(--black);
+}
+
+.quote-author {
+  color: var(--black);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.quote-job-title {
+  font-size: 1.2rem;
+  color: var(--black);
+  text-align: center;
+}
+
+.logo {
+  width: 400px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.logos__wrapper {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.institute-box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.institute-box-text h2 {
+  padding-bottom: 2rem;
+}
+
+.institute-box-text p {
+  padding-bottom: 1rem;
+}
+
+.institute__apply {
+  background-image: url(./assets/img/Mountain.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.title__h2::before {
+  content: '';
+  background: url(./assets/img/Line_vertical.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20%;
+  display: block;
+  width: 100%;
+  height: 3px;
+}
+
+/*footer*/
+
+#footer {
+  /* position: relative; */
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  box-shadow: 0 -5px 5px -5px #000;
+}
+
+#footer i {
+  color: var(--gold);
+  font-size: 1.4rem;
+}
+
+#footer a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+#footer p {
+  color: var(--white);
+}
+
+.footer-content {
+  justify-content: space-around;
+}
+
+.footer-content>.col-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.address,
+.location,
+.phone,
+.email {
+  padding-bottom: 1rem;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: end;
+}
+
+.footer-img img {
+  object-fit: cover;
 }
