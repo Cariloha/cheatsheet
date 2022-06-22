@@ -16,6 +16,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
   /*Colors*/
   --primaryColor: #051f34;
+  --gold: #e2ae79;
   --textGray: #5d5d5d;
   --secondTitle: #c1592b;
   --bgGray: #f3f3f4;
@@ -33,6 +34,7 @@ body {
   font-size: 1.4rem; /*default font size for document*/
   line-height: 1.5;
   font-family: var(--textFont);
+  background-image: url(./assets/img/Background.png);
 }
 
 *,
@@ -107,6 +109,13 @@ body {
   perspective: 1000px;
 }
 
+@media screen and (min-width: 1024px) {
+  .scene {
+    width: 80%;
+    margin: 2% 10% 0 10%;
+  }
+}
+
 .book {
   position: relative;
   width: 100%;
@@ -131,8 +140,20 @@ body {
     padding: 10% 5% 5%;
     box-sizing: border-box;
     backface-visibility: hidden;
-    background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#FFFFFF), to(#CCCCCC));
-    background: linear-gradient(to bottom right, #fff, #ccc);
+    background-image: url(./assets/img/Background.png);
+    background-position: 20% -55%;
+    box-shadow: 0px 6px 17px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 6px 17px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 17px 0px rgba(0, 0, 0, 0.75);
+    /* background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#FFFFFF), to(#CCCCCC));
+    background: linear-gradient(to bottom right, #fff, #ccc); */
+  }
+
+  @media screen and (max-width: 1023px) {
+    .content {
+      overflow: auto;
+    }
+    
   }
 
 .page.active {
@@ -190,24 +211,39 @@ p {
   }
 }
 
-/* added for the buttons */
-
-#next {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-
-#prev {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-}
-
 .hide {
   display: none;
 }
 
 .show {
   display: inline;
+}
+
+/* added for the buttons */
+
+@media screen and (max-width: 1023px) {
+  .btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #next {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+  
+    #prev {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+  
+    .btn {
+      background-color: var(--gold);
+      color: var(--white);
+      padding: 1rem;
+      font-size: 1.8rem;
+    }
 }

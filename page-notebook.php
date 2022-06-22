@@ -38,8 +38,9 @@ if (have_posts()) {
             }
             ?>
         </article>
-        <button id='next'>Next</button>
-        <button id='prev'>Previous</button>
+        <button class="btn" id='next'> >>> </button>
+        <button class="btn" id='prev'>
+            <<< </button>
     </div>
 
 <?php }
