@@ -241,8 +241,8 @@ p {
     }
   
     .btn {
-      background-color: var(--gold);
-      color: var(--white);
+      /* background-color: var(--gold); */
+      color: var(--black);
       padding: 1rem;
       font-size: 1.8rem;
     }
