@@ -25,10 +25,10 @@ if (have_posts()) {
 ?>
 
     <!-- <main class="institute"> -->
-    <section class="hero hero--institute" style="background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.22450987230829833) 29%, rgba(0,0,0,0.23571435410101538) 55%, rgba(0,0,0,1) 100%), url('<?php echo $header_image_url ?>');">
-        <div class="hero__definition--institute">
+    <section class="hero hero--institute" style="background-image: url('<?php echo $header_image_url ?>');">
+        <!-- <div class="hero__definition--institute">
             <?= $altius_definition ?>
-        </div>
+        </div> -->
 
         <div class="hero__description container">
             <div class="row">
