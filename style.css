@@ -389,8 +389,8 @@ p {
 .hero__description {
   grid-column: 1/-1;
   grid-row: 1/-1;
-  align-self: flex-end;
-  padding-bottom: 30rem;
+  align-self: center;
+  /* padding-bottom: 30rem; */
 }
 
 .quote-img {
