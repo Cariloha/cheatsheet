@@ -37,6 +37,7 @@ require_once scistories_DIR . '/classes/Publications.php';
 /*Metaboxes*/
 require_once scistories_DIR . '/metaboxes/GlobalMetaboxes.php';
 require_once scistories_DIR . '/metaboxes/institute-metabox.php';
+require_once scistories_DIR . '/metaboxes/notebook-metabox.php';
 
 /*Custom posts metaboxes*/
 require_once scistories_DIR . '/metaboxes/custom_posts/research-cpt-metabox.php';
