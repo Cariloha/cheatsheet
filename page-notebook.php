@@ -44,9 +44,9 @@ if (have_posts()) {
 
         <div class="scene">
             <article class="book">
-                <section class="section__page page">
+                <section class="section__page">
                     <div class="content">
-                        <section class="institute__the__content pt-10">
+                        <section class="institute__the__content">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12">

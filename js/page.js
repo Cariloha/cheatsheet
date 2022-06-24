@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     jQuery('.flipped')
       .last()
       .toggleClass('flipped active')
-      .siblings('.page')
+      .siblings('.section__page')
       .removeClass('active'); 
     console.log("---" + currentPage);
     checkButtons();
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     currentPage++;
     jQuery('.active')
       .toggleClass('active flipped')
-      .next('.page')
+      .next('.section__page')
       .addClass('active');
     console.log("++++" + currentPage);
     checkButtons();

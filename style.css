@@ -182,7 +182,7 @@ p {
   transform-style: preserve-3d;
 }
 
-.page {
+.section__page {
   position: absolute;
   color: black;
   width: 100%;
@@ -213,20 +213,20 @@ p {
     
   }
 
-.page.active {
+.section__page.active {
   transform: rotateY(0deg);
   transition: 1.5s transform;
   z-index: 1;
 }
 
-.page.flipped {
+.section__page.flipped {
   transform: rotateY(-90deg);
   transition: 1.5s transform;
   z-index: 2;
   animation: fade 1s 0.5s forwards;
 }
 
-.page.flipped:last-of-type {
+.section__page.flipped:last-of-type {
   z-index: 1;
 }
 
@@ -240,7 +240,7 @@ p {
   }
 }
 
-.active ~ .page {
+.active ~ .section__page {
   opacity: 0;
 }
 
