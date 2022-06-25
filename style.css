@@ -161,17 +161,23 @@ p {
 ** NOTEBOOK 
 **/
 
+.notebook {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
 .scene {
   width: 90%;
   height: 90%;
-  margin: 5% 5% 5% 5%;
+  /* margin: 5% 5% 5% 5%; */
   perspective: 1000px;
 }
 
 @media screen and (min-width: 1024px) {
   .scene {
-    width: 80%;
-    margin: 2% 10% 0 10%;
+    width: 100%;
+    margin: 0% 20% 5% 22%;
   }
 }
 
@@ -195,7 +201,7 @@ p {
 .content {
   position: absolute;
   padding: 10% 5% 5%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   backface-visibility: hidden;
   background-image: url(./assets/img/Background.png);
   background-position: 20% -55%;

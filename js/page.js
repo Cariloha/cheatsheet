@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .toggleClass('flipped active')
       .siblings('.section__page')
       .removeClass('active'); 
-    console.log("---" + currentPage);
+    // console.log("---" + currentPage);
     checkButtons();
   }
 
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .toggleClass('active flipped')
       .next('.section__page')
       .addClass('active');
-    console.log("++++" + currentPage);
+    // console.log("++++" + currentPage);
     checkButtons();
   }
 
