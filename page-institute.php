@@ -132,7 +132,7 @@ if (have_posts()) {
                     </div>
                     <div class="col-12 col-md-6 institute-image-box">
                         <video muted playsinline class="scroll-video">
-                            <source poster="" src="<?= $video_safari_url ?>" type='video/mp4; codecs="hvc1"' ">
+                            <source poster="" src="<?= $video_safari_url ?>" type='video/mp4; codecs="hvc1"'>
                             <source poster="" src=" <?= $video_url ?>" type="video/webm">
                         </video>
                     </div>
