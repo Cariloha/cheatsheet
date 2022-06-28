@@ -21,8 +21,12 @@ function crb_institute_post_meta()
                 )),
         ))
         ->add_fields(array(
-            Field::make('image', 'crb_institute_image', 'Institute Section Image'),
+            Field::make('file', 'crb_institute_video', 'Video File')
+                ->set_type(array('video')),
+            Field::make('file', 'crb_institute_video_safari', 'Video File for Safari')
+                ->set_type(array('video')),
             Field::make('rich_text', 'crb_institute_content', __('Institute Content'))
+
         ))
         ->add_fields(array(
             Field::make('complex', 'crb_logos', 'Logos')
@@ -40,3 +44,10 @@ function crb_institute_post_meta()
             Field::make('text', 'crb_opportunities_url', __('Opportunities button url')),
         ));
 }
+
+add_filter('crb_media_buttons_html', function ($html, $field_name) {
+    if ($field_name === 'crb_institute_content') {
+        return;
+    }
+    return $html;
+}, 10, 2);

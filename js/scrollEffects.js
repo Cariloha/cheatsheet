@@ -9,11 +9,11 @@ window.onload = () => {
     let scene = new ScrollMagic.Scene(
       {
         triggerElement: trigger,
-        duration: 300
+        duration: 800
       }
     )
       .addTo(controller)
-      // .addIndicators()
+      .addIndicators()
       .on("enter", function (e) {
         element.play();
       })
@@ -23,7 +23,7 @@ window.onload = () => {
   }
 
   videoScroll(".scroll-video");
-  videoScroll(".scroll-video-2");
+  // videoScroll(".scroll-video-2");
 
 }
 

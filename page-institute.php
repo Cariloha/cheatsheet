@@ -116,6 +116,12 @@ if (have_posts()) {
             <?php
             $innovation_img = carbon_get_post_meta(get_the_ID(), 'crb_institute_image');
             $innovation_content = carbon_get_post_meta(get_the_ID(), 'crb_institute_content');
+            $video_id = carbon_get_post_meta(get_the_ID(), 'crb_institute_video');
+            $video_url = wp_get_attachment_url($video_id);
+            $video_safari_id = carbon_get_post_meta(get_the_ID(), 'crb_institute_video_safari');
+            $video_safari_url = wp_get_attachment_url($video_safari_id);
+
+
             ?>
 
             <div class="container">
@@ -125,14 +131,17 @@ if (have_posts()) {
                         <?= $innovation_content ?>
                     </div>
                     <div class="col-12 col-md-6 institute-image-box">
-                        <img class="img-fluid innovation-img" src="<?php echo wp_get_attachment_url($innovation_img) ?>" alt="">
+                        <video muted playsinline class="scroll-video">
+                            <source poster="" src="<?= $video_safari_url ?>" type='video/mp4; codecs="hvc1"' ">
+                            <source poster="" src=" <?= $video_url ?>" type="video/webm">
+                        </video>
                     </div>
                 </div>
             </div>
 
         </section>
 
-        <div class="container">
+        <div class=" container">
             <div class="row">
                 <div class="col-12">
                     <img class="img-fluid" src="<?php echo get_template_directory_uri() . '/assets/img/Line_horizontal.png' ?>" alt="">

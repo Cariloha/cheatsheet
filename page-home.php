@@ -41,37 +41,5 @@ if (have_posts()) {
     </div>
   </div>
 
-
-
-  <!-- <div class="wrapper second">
-    <img class="bnw-filter" src="https://wordpress-576448-2675264.cloudwaysapps.com/wp-content/uploads/2022/06/istockphoto-1356638196-170667a.jpg" alt="" sizes="
-    (min-width: 2420px) 2000px, 
-    (min-width: 720px) calc(94.76vw - 274px), 
-    (min-width: 520px) calc(100vw - 96px), 
-    calc(100vw - 32px)
-    " />
-  </div>
-
-  <div class="wrapper third">
-    <img class="bnw-filter" src="https://wordpress-576448-2675264.cloudwaysapps.com/wp-content/uploads/2022/06/istockphoto-1356638196-170667a.jpg" alt="" sizes="
-    (min-width: 2420px) 2000px, 
-    (min-width: 720px) calc(94.76vw - 274px), 
-    (min-width: 520px) calc(100vw - 96px), 
-    calc(100vw - 32px)
-    " />
-  </div>
-
-  <div class="wrapper fourth">
-    <img class="bnw-filter" src="http://testing.local/wp-content/uploads/2022/05/istockphoto-1356638196-170667a.jpg" alt="" sizes="
-    (min-width: 2420px) 2000px, 
-    (min-width: 720px) calc(94.76vw - 274px), 
-    (min-width: 520px) calc(100vw - 96px), 
-    calc(100vw - 32px)
-    " />
-  </div> -->
-
-
-
-
 <?php }
 get_footer(); ?>
