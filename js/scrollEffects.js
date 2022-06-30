@@ -39,7 +39,7 @@ window.onload = () => {
     })
       .setClassToggle(pencilLogo, 'fade__out')
       .setTween(gsap.to(pencilLogo, {delay: 0.3 }))
-      .addIndicators()
+      // .addIndicators()
       .addTo(logoController);
   });
 
