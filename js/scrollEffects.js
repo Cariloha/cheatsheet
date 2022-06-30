@@ -54,7 +54,7 @@ window.onload = () => {
     .setTween(gsap.to(colorLogo, { delay: 0.3 }))
     // .addIndicators()
     .addTo(logoController);
-});
-
+  });
+  
 }
 
