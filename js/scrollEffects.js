@@ -9,7 +9,7 @@ window.onload = () => {
     let scene = new ScrollMagic.Scene(
       {
         triggerElement: trigger,
-        duration: 800
+        reverse: false
       }
     )
       .addTo(controller)
@@ -25,12 +25,36 @@ window.onload = () => {
   videoScroll(".scroll-video");
   // videoScroll(".scroll-video-2");
 
-  const logos = document.querySelectorAll(".logo");
+  const pencilLogos = document.querySelectorAll(".logo--pencil");
+  // console.log(pencilLogos)
+  const colorLogos = document.querySelectorAll(".logo--color");
   let logoController = new ScrollMagic.Controller();
-  logos.forEach(logo => {
-    console.log(logo);
-    
+  
+  pencilLogos.forEach(pencilLogo => {
+    let pencilScene = new ScrollMagic.Scene({
+      triggerElement: pencilLogo,
+      triggerHook: .7,
+      reverse: false
+
+    })
+      .setClassToggle(pencilLogo, 'fade__out')
+      .setTween(gsap.to(pencilLogo, {delay: 0.3 }))
+      .addIndicators()
+      .addTo(logoController);
   });
+
+  colorLogos.forEach(colorLogo => {
+  let logoScene = new ScrollMagic.Scene({
+    triggerElement: colorLogo,
+    triggerHook: .7,
+    reverse: false
+
+  })
+    .setClassToggle(colorLogo, 'fade__in')
+    .setTween(gsap.to(colorLogo, { delay: 0.3 }))
+    .addIndicators()
+    .addTo(logoController);
+});
 
 }
 
