@@ -164,7 +164,8 @@ if (have_posts()) {
                         $color = $logo['crb_color_image'];
                     ?>
                         <div class="col-12 col-md-6 col-lg-3 logos__wrapper">
-                            <img class="img-fluid logo" alt="logo" onmouseover="this.src='<?= wp_get_attachment_url($color); ?>'" onmouseout="this.src='<?= wp_get_attachment_url($pencil); ?>'" src="<?= wp_get_attachment_url($pencil); ?>">
+                            <img class="img-fluid logo logo--pencil" alt="logo" src="<?= wp_get_attachment_url($pencil); ?>">
+                            <img class="img-fluid logo logo--color" alt="logo" src="<?= wp_get_attachment_url($color); ?>">
                         </div>
                     <?php } ?>
                 </div>

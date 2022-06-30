@@ -13,17 +13,24 @@ window.onload = () => {
       }
     )
       .addTo(controller)
-      // .addIndicators()
+      .addIndicators()
       .on("enter", function (e) {
         element.play();
       })
-      .on("leave", function (e) {
-        element.pause();
-      })
+      // .on("leave", function (e) {
+      //   element.pause();
+      // })
   }
 
   videoScroll(".scroll-video");
   // videoScroll(".scroll-video-2");
+
+  const logos = document.querySelectorAll(".logo");
+  let logoController = new ScrollMagic.Controller();
+  logos.forEach(logo => {
+    console.log(logo);
+    
+  });
 
 }
 
