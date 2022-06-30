@@ -13,7 +13,7 @@ window.onload = () => {
       }
     )
       .addTo(controller)
-      .addIndicators()
+      // .addIndicators()
       .on("enter", function (e) {
         element.play();
       })
@@ -52,7 +52,7 @@ window.onload = () => {
   })
     .setClassToggle(colorLogo, 'fade__in')
     .setTween(gsap.to(colorLogo, { delay: 0.3 }))
-    .addIndicators()
+    // .addIndicators()
     .addTo(logoController);
 });
 
